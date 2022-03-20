@@ -5,7 +5,7 @@ sum=0
 while [ $i -le $N ]
 do
     read num
-    sum=`echo "$sum + $num" | bc -l`
+    sum=$((sum + num))
     i=$((i + 1))
 done
 average=`echo "$sum / $N" | bc -l`
