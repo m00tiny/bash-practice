@@ -5,6 +5,6 @@ read z
 if [[ $x == $y ]] && [[ $x == $z ]]; 
 	then echo "EQUILATERAL";
 elif [[ $x == $y || $x == $z || $y == $z ]];
-	then echo "ISOSCELSE";
+	then echo "ISOSCELES";
 else echo "SCALENE";
 fi;
