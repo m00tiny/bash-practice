@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+read x
+read y
+read z
+if [[(( $x == $y )) & (( $y == $x ))]; 
+	then echo "EQUALATIRAL";
+		elif [(( $y == $z )) & (( $z != $x ))];
+			then echo "SCALENE";
+		else echo "ISOSOLESE";]]
+fi;
