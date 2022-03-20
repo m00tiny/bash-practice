@@ -2,11 +2,9 @@
 read x
 read y
 read z
-if (((( $x == $y )) & (( $y == $x )))); 
+if [[ $x == $y ]] && [[ $x == $z ]]; 
 	then echo "EQUILATERAL";
-		elif (( $y == $z )) && (( $z != $x ));
-			then echo "ISOSCLESE";
-        elif (( $x == $y )) && (( $z != $y ));
-            then echo "ISOSCELSE";
-	else echo "SCALENE";
+elif [[ $x == $y || $x == $z || $y == $z ]];
+	then echo "ISOSCELSE";
+else echo "SCALENE";
 fi;
