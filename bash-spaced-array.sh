@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 while read line
 do
-    array+="$line "
+  array+="$line "
 done
 echo $array
