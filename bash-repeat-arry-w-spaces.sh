@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
-while read line
-do
-  array=("${array[@]}" $line)
-done
-echo "${array[@]} ${array[@]} ${array[@]}"
+myArray=(cat crap.txt)
+echo "${cat[@]} ${cat[@]} ${cat[@]}"
